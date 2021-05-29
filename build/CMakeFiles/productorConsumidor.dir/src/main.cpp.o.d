@@ -123,11 +123,20 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/locale_facets.tcc \
  /usr/include/c++/11.1.0/bits/basic_ios.tcc \
  /usr/include/c++/11.1.0/bits/ostream.tcc /usr/include/c++/11.1.0/istream \
- /usr/include/c++/11.1.0/bits/istream.tcc \
+ /usr/include/c++/11.1.0/bits/istream.tcc /usr/include/c++/11.1.0/thread \
+ /usr/include/c++/11.1.0/bits/std_thread.h /usr/include/c++/11.1.0/tuple \
+ /usr/include/c++/11.1.0/utility \
+ /usr/include/c++/11.1.0/bits/stl_relops.h /usr/include/c++/11.1.0/array \
+ /usr/include/c++/11.1.0/bits/uses_allocator.h \
+ /usr/include/c++/11.1.0/bits/invoke.h \
+ /usr/include/c++/11.1.0/bits/refwrap.h \
+ /usr/include/c++/11.1.0/bits/unique_ptr.h \
+ /usr/include/c++/11.1.0/bits/this_thread_sleep.h \
+ /usr/include/c++/11.1.0/chrono /usr/include/c++/11.1.0/ratio \
+ /usr/include/c++/11.1.0/limits /usr/include/c++/11.1.0/ctime \
+ /usr/include/c++/11.1.0/bits/parse_numbers.h \
  /home/kristo/Documents/productor_consumidor/src/../headers/cursor.h \
  /usr/include/c++/11.1.0/regex /usr/include/c++/11.1.0/algorithm \
- /usr/include/c++/11.1.0/utility \
- /usr/include/c++/11.1.0/bits/stl_relops.h \
  /usr/include/c++/11.1.0/bits/stl_algo.h \
  /usr/include/c++/11.1.0/bits/algorithmfwd.h \
  /usr/include/c++/11.1.0/bits/stl_heap.h \
@@ -137,23 +146,18 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/stream_iterator.h \
  /usr/include/c++/11.1.0/locale \
  /usr/include/c++/11.1.0/bits/locale_facets_nonio.h \
- /usr/include/c++/11.1.0/ctime \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/time_members.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/11.1.0/bits/codecvt.h \
  /usr/include/c++/11.1.0/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11.1.0/bits/locale_conv.h \
- /usr/include/c++/11.1.0/bits/unique_ptr.h /usr/include/c++/11.1.0/tuple \
- /usr/include/c++/11.1.0/array \
- /usr/include/c++/11.1.0/bits/uses_allocator.h \
- /usr/include/c++/11.1.0/bits/invoke.h /usr/include/c++/11.1.0/memory \
+ /usr/include/c++/11.1.0/memory \
  /usr/include/c++/11.1.0/bits/stl_uninitialized.h \
  /usr/include/c++/11.1.0/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11.1.0/bits/align.h /usr/include/c++/11.1.0/bit \
  /usr/include/c++/11.1.0/bits/shared_ptr.h \
  /usr/include/c++/11.1.0/bits/shared_ptr_base.h \
  /usr/include/c++/11.1.0/bits/allocated_ptr.h \
- /usr/include/c++/11.1.0/bits/refwrap.h \
  /usr/include/c++/11.1.0/ext/aligned_buffer.h \
  /usr/include/c++/11.1.0/ext/concurrence.h \
  /usr/include/c++/11.1.0/bits/shared_ptr_atomic.h \
