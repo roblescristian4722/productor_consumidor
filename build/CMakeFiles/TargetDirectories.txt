@@ -1,0 +1,3 @@
+/home/kristo/Documents/productor_consumidor/build/CMakeFiles/rebuild_cache.dir
+/home/kristo/Documents/productor_consumidor/build/CMakeFiles/edit_cache.dir
+/home/kristo/Documents/productor_consumidor/build/CMakeFiles/productorConsumidor.dir
