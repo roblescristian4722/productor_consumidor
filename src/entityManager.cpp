@@ -1,10 +1,16 @@
 #include "../headers/entityManager.h"
 
-Producer::Producer() {}
+Producer::Producer(EntityManager *em)
+{
+    this->em = em;
+}
 
 Producer::~Producer(){}
 
-Consumer::Consumer() {}
+Consumer::Consumer(EntityManager *em)
+{
+    this->em = em;
+}
 
 Consumer::~Consumer() {}
 
@@ -28,8 +34,14 @@ void Producer::waitReady()
     while (!kill) {
         if (state == ENTERING) {
             getAmount();
+            produce();
         }        
     }
+}
+
+void Producer::produce()
+{
+    
 }
 
 void Consumer::waitReady()
