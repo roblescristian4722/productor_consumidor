@@ -23,8 +23,9 @@ enum States
     LEAVING
 };
 
-struct Controller
+class Controller
 {
+    friend class EntityManager;
     Controller();
     ~Controller();
     
