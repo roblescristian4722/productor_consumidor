@@ -177,6 +177,54 @@ src/cursor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/productorConsumidor.dir/build.make CMakeFiles/productorConsumidor.dir/src/cursor.cpp.s
 .PHONY : src/cursor.cpp.s
 
+src/entityManager.o: src/entityManager.cpp.o
+.PHONY : src/entityManager.o
+
+# target to build an object file
+src/entityManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/productorConsumidor.dir/build.make CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o
+.PHONY : src/entityManager.cpp.o
+
+src/entityManager.i: src/entityManager.cpp.i
+.PHONY : src/entityManager.i
+
+# target to preprocess a source file
+src/entityManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/productorConsumidor.dir/build.make CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.i
+.PHONY : src/entityManager.cpp.i
+
+src/entityManager.s: src/entityManager.cpp.s
+.PHONY : src/entityManager.s
+
+# target to generate assembly for a file
+src/entityManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/productorConsumidor.dir/build.make CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.s
+.PHONY : src/entityManager.cpp.s
+
+src/kbhitLinux.o: src/kbhitLinux.cpp.o
+.PHONY : src/kbhitLinux.o
+
+# target to build an object file
+src/kbhitLinux.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/productorConsumidor.dir/build.make CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o
+.PHONY : src/kbhitLinux.cpp.o
+
+src/kbhitLinux.i: src/kbhitLinux.cpp.i
+.PHONY : src/kbhitLinux.i
+
+# target to preprocess a source file
+src/kbhitLinux.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/productorConsumidor.dir/build.make CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.i
+.PHONY : src/kbhitLinux.cpp.i
+
+src/kbhitLinux.s: src/kbhitLinux.cpp.s
+.PHONY : src/kbhitLinux.s
+
+# target to generate assembly for a file
+src/kbhitLinux.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/productorConsumidor.dir/build.make CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.s
+.PHONY : src/kbhitLinux.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -216,6 +264,12 @@ help:
 	@echo "... src/cursor.o"
 	@echo "... src/cursor.i"
 	@echo "... src/cursor.s"
+	@echo "... src/entityManager.o"
+	@echo "... src/entityManager.i"
+	@echo "... src/entityManager.s"
+	@echo "... src/kbhitLinux.o"
+	@echo "... src/kbhitLinux.i"
+	@echo "... src/kbhitLinux.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,6 +1,8 @@
-CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
- /home/kristo/Documents/productor_consumidor/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11.1.0/iostream \
+CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o: \
+ /home/kristo/Documents/productor_consumidor/src/entityManager.cpp \
+ /usr/include/stdc-predef.h \
+ /home/kristo/Documents/productor_consumidor/src/../headers/entityManager.h \
+ /usr/include/c++/11.1.0/iostream \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/sys/cdefs.h \
@@ -135,6 +137,7 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/chrono /usr/include/c++/11.1.0/ratio \
  /usr/include/c++/11.1.0/limits /usr/include/c++/11.1.0/ctime \
  /usr/include/c++/11.1.0/bits/parse_numbers.h \
+ /home/kristo/Documents/productor_consumidor/src/../headers/controller.h \
  /home/kristo/Documents/productor_consumidor/src/../headers/cursor.h \
  /usr/include/c++/11.1.0/regex /usr/include/c++/11.1.0/algorithm \
  /usr/include/c++/11.1.0/bits/stl_algo.h \
@@ -190,10 +193,6 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/regex.tcc \
  /usr/include/c++/11.1.0/bits/regex_executor.h \
  /usr/include/c++/11.1.0/bits/regex_executor.tcc \
- /home/kristo/Documents/productor_consumidor/src/../headers/controller.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/cursor.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/entityManager.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/controller.h \
  /home/kristo/Documents/productor_consumidor/src/../headers/kbhitLinux.h \
  /usr/include/c++/11.1.0/stdlib.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
@@ -212,5 +211,4 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
  /usr/include/fcntl.h /usr/include/bits/fcntl.h \
  /usr/include/bits/fcntl-linux.h /usr/include/bits/types/struct_iovec.h \
  /usr/include/linux/falloc.h /usr/include/bits/stat.h \
- /usr/include/bits/struct_stat.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/kbhitLinux.h
+ /usr/include/bits/struct_stat.h

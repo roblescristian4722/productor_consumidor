@@ -7,6 +7,7 @@
 
 int main(int argc, char* argv[])
 {
+    srand(time(0));
     EntityManager em;
     return 0;
 }

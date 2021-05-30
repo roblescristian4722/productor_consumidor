@@ -111,11 +111,41 @@ CMakeFiles/productorConsumidor.dir/src/cursor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/productorConsumidor.dir/src/cursor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kristo/Documents/productor_consumidor/src/cursor.cpp -o CMakeFiles/productorConsumidor.dir/src/cursor.cpp.s
 
+CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o: CMakeFiles/productorConsumidor.dir/flags.make
+CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o: ../src/entityManager.cpp
+CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o: CMakeFiles/productorConsumidor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kristo/Documents/productor_consumidor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o -MF CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o.d -o CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o -c /home/kristo/Documents/productor_consumidor/src/entityManager.cpp
+
+CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kristo/Documents/productor_consumidor/src/entityManager.cpp > CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.i
+
+CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kristo/Documents/productor_consumidor/src/entityManager.cpp -o CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.s
+
+CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o: CMakeFiles/productorConsumidor.dir/flags.make
+CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o: ../src/kbhitLinux.cpp
+CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o: CMakeFiles/productorConsumidor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kristo/Documents/productor_consumidor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o -MF CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o.d -o CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o -c /home/kristo/Documents/productor_consumidor/src/kbhitLinux.cpp
+
+CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kristo/Documents/productor_consumidor/src/kbhitLinux.cpp > CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.i
+
+CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kristo/Documents/productor_consumidor/src/kbhitLinux.cpp -o CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.s
+
 # Object files for target productorConsumidor
 productorConsumidor_OBJECTS = \
 "CMakeFiles/productorConsumidor.dir/src/main.cpp.o" \
 "CMakeFiles/productorConsumidor.dir/src/controller.cpp.o" \
-"CMakeFiles/productorConsumidor.dir/src/cursor.cpp.o"
+"CMakeFiles/productorConsumidor.dir/src/cursor.cpp.o" \
+"CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o" \
+"CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o"
 
 # External object files for target productorConsumidor
 productorConsumidor_EXTERNAL_OBJECTS =
@@ -123,9 +153,11 @@ productorConsumidor_EXTERNAL_OBJECTS =
 productorConsumidor: CMakeFiles/productorConsumidor.dir/src/main.cpp.o
 productorConsumidor: CMakeFiles/productorConsumidor.dir/src/controller.cpp.o
 productorConsumidor: CMakeFiles/productorConsumidor.dir/src/cursor.cpp.o
+productorConsumidor: CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o
+productorConsumidor: CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o
 productorConsumidor: CMakeFiles/productorConsumidor.dir/build.make
 productorConsumidor: CMakeFiles/productorConsumidor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kristo/Documents/productor_consumidor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable productorConsumidor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kristo/Documents/productor_consumidor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable productorConsumidor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/productorConsumidor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -12,6 +12,8 @@ include_directories(headers)
 set(SOURCE  src/main.cpp
             src/controller.cpp
             src/cursor.cpp
+            src/entityManager.cpp
+            src/kbhitLinux.cpp
 )
 
 

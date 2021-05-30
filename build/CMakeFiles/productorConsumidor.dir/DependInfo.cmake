@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kristo/Documents/productor_consumidor/src/controller.cpp" "CMakeFiles/productorConsumidor.dir/src/controller.cpp.o" "gcc" "CMakeFiles/productorConsumidor.dir/src/controller.cpp.o.d"
   "/home/kristo/Documents/productor_consumidor/src/cursor.cpp" "CMakeFiles/productorConsumidor.dir/src/cursor.cpp.o" "gcc" "CMakeFiles/productorConsumidor.dir/src/cursor.cpp.o.d"
+  "/home/kristo/Documents/productor_consumidor/src/entityManager.cpp" "CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o" "gcc" "CMakeFiles/productorConsumidor.dir/src/entityManager.cpp.o.d"
+  "/home/kristo/Documents/productor_consumidor/src/kbhitLinux.cpp" "CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o" "gcc" "CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o.d"
   "/home/kristo/Documents/productor_consumidor/src/main.cpp" "CMakeFiles/productorConsumidor.dir/src/main.cpp.o" "gcc" "CMakeFiles/productorConsumidor.dir/src/main.cpp.o.d"
   )
 

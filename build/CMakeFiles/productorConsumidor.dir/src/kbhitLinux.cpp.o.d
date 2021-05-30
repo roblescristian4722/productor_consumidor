@@ -1,6 +1,8 @@
-CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
- /home/kristo/Documents/productor_consumidor/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11.1.0/iostream \
+CMakeFiles/productorConsumidor.dir/src/kbhitLinux.cpp.o: \
+ /home/kristo/Documents/productor_consumidor/src/kbhitLinux.cpp \
+ /usr/include/stdc-predef.h \
+ /home/kristo/Documents/productor_consumidor/src/../headers/kbhitLinux.h \
+ /usr/include/c++/11.1.0/iostream \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/sys/cdefs.h \
@@ -123,94 +125,22 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/locale_facets.tcc \
  /usr/include/c++/11.1.0/bits/basic_ios.tcc \
  /usr/include/c++/11.1.0/bits/ostream.tcc /usr/include/c++/11.1.0/istream \
- /usr/include/c++/11.1.0/bits/istream.tcc /usr/include/c++/11.1.0/thread \
- /usr/include/c++/11.1.0/bits/std_thread.h /usr/include/c++/11.1.0/tuple \
- /usr/include/c++/11.1.0/utility \
- /usr/include/c++/11.1.0/bits/stl_relops.h /usr/include/c++/11.1.0/array \
- /usr/include/c++/11.1.0/bits/uses_allocator.h \
- /usr/include/c++/11.1.0/bits/invoke.h \
- /usr/include/c++/11.1.0/bits/refwrap.h \
- /usr/include/c++/11.1.0/bits/unique_ptr.h \
- /usr/include/c++/11.1.0/bits/this_thread_sleep.h \
- /usr/include/c++/11.1.0/chrono /usr/include/c++/11.1.0/ratio \
- /usr/include/c++/11.1.0/limits /usr/include/c++/11.1.0/ctime \
- /usr/include/c++/11.1.0/bits/parse_numbers.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/cursor.h \
- /usr/include/c++/11.1.0/regex /usr/include/c++/11.1.0/algorithm \
- /usr/include/c++/11.1.0/bits/stl_algo.h \
- /usr/include/c++/11.1.0/bits/algorithmfwd.h \
- /usr/include/c++/11.1.0/bits/stl_heap.h \
- /usr/include/c++/11.1.0/bits/stl_tempbuf.h \
- /usr/include/c++/11.1.0/bits/uniform_int_dist.h \
- /usr/include/c++/11.1.0/bitset /usr/include/c++/11.1.0/iterator \
- /usr/include/c++/11.1.0/bits/stream_iterator.h \
- /usr/include/c++/11.1.0/locale \
- /usr/include/c++/11.1.0/bits/locale_facets_nonio.h \
- /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/time_members.h \
- /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11.1.0/bits/codecvt.h \
- /usr/include/c++/11.1.0/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11.1.0/bits/locale_conv.h \
- /usr/include/c++/11.1.0/memory \
- /usr/include/c++/11.1.0/bits/stl_uninitialized.h \
- /usr/include/c++/11.1.0/bits/stl_raw_storage_iter.h \
- /usr/include/c++/11.1.0/bits/align.h /usr/include/c++/11.1.0/bit \
- /usr/include/c++/11.1.0/bits/shared_ptr.h \
- /usr/include/c++/11.1.0/bits/shared_ptr_base.h \
- /usr/include/c++/11.1.0/bits/allocated_ptr.h \
- /usr/include/c++/11.1.0/ext/aligned_buffer.h \
- /usr/include/c++/11.1.0/ext/concurrence.h \
- /usr/include/c++/11.1.0/bits/shared_ptr_atomic.h \
- /usr/include/c++/11.1.0/bits/atomic_base.h \
- /usr/include/c++/11.1.0/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11.1.0/backward/auto_ptr.h \
- /usr/include/c++/11.1.0/sstream /usr/include/c++/11.1.0/bits/sstream.tcc \
- /usr/include/c++/11.1.0/stack /usr/include/c++/11.1.0/deque \
- /usr/include/c++/11.1.0/bits/stl_deque.h \
- /usr/include/c++/11.1.0/bits/deque.tcc \
- /usr/include/c++/11.1.0/bits/stl_stack.h /usr/include/c++/11.1.0/vector \
- /usr/include/c++/11.1.0/bits/stl_vector.h \
- /usr/include/c++/11.1.0/bits/stl_bvector.h \
- /usr/include/c++/11.1.0/bits/vector.tcc /usr/include/c++/11.1.0/map \
- /usr/include/c++/11.1.0/bits/stl_tree.h \
- /usr/include/c++/11.1.0/bits/stl_map.h \
- /usr/include/c++/11.1.0/bits/stl_multimap.h \
- /usr/include/c++/11.1.0/bits/erase_if.h /usr/include/c++/11.1.0/cstring \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/c++/11.1.0/bits/std_function.h \
- /usr/include/c++/11.1.0/bits/regex_constants.h \
- /usr/include/c++/11.1.0/bits/regex_error.h \
- /usr/include/c++/11.1.0/bits/regex_automaton.h \
- /usr/include/c++/11.1.0/bits/regex_automaton.tcc \
- /usr/include/c++/11.1.0/bits/regex_scanner.h \
- /usr/include/c++/11.1.0/bits/regex_scanner.tcc \
- /usr/include/c++/11.1.0/bits/regex_compiler.h \
- /usr/include/c++/11.1.0/bits/regex_compiler.tcc \
- /usr/include/c++/11.1.0/bits/regex.h \
- /usr/include/c++/11.1.0/bits/regex.tcc \
- /usr/include/c++/11.1.0/bits/regex_executor.h \
- /usr/include/c++/11.1.0/bits/regex_executor.tcc \
- /home/kristo/Documents/productor_consumidor/src/../headers/controller.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/cursor.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/entityManager.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/controller.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/kbhitLinux.h \
- /usr/include/c++/11.1.0/stdlib.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/sys/ioctl.h /usr/include/bits/ioctls.h \
- /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
- /usr/include/linux/ioctl.h /usr/include/asm/ioctl.h \
- /usr/include/asm-generic/ioctl.h /usr/include/bits/ioctl-types.h \
- /usr/include/sys/ttydefaults.h /usr/include/termios.h \
- /usr/include/bits/termios.h /usr/include/bits/termios-struct.h \
- /usr/include/bits/termios-c_cc.h /usr/include/bits/termios-c_iflag.h \
- /usr/include/bits/termios-c_oflag.h /usr/include/bits/termios-baud.h \
- /usr/include/bits/termios-c_cflag.h /usr/include/bits/termios-c_lflag.h \
- /usr/include/bits/termios-tcflow.h /usr/include/bits/termios-misc.h \
- /usr/include/fcntl.h /usr/include/bits/fcntl.h \
- /usr/include/bits/fcntl-linux.h /usr/include/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/bits/stat.h \
- /usr/include/bits/struct_stat.h \
- /home/kristo/Documents/productor_consumidor/src/../headers/kbhitLinux.h
+ /usr/include/c++/11.1.0/bits/istream.tcc /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/11.1.0/stdlib.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
+ /usr/include/bits/unistd_ext.h /usr/include/sys/ioctl.h \
+ /usr/include/bits/ioctls.h /usr/include/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
+ /usr/include/bits/ioctl-types.h /usr/include/sys/ttydefaults.h \
+ /usr/include/termios.h /usr/include/bits/termios.h \
+ /usr/include/bits/termios-struct.h /usr/include/bits/termios-c_cc.h \
+ /usr/include/bits/termios-c_iflag.h /usr/include/bits/termios-c_oflag.h \
+ /usr/include/bits/termios-baud.h /usr/include/bits/termios-c_cflag.h \
+ /usr/include/bits/termios-c_lflag.h /usr/include/bits/termios-tcflow.h \
+ /usr/include/bits/termios-misc.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/bits/types/struct_iovec.h /usr/include/linux/falloc.h \
+ /usr/include/bits/stat.h /usr/include/bits/struct_stat.h

@@ -5,6 +5,8 @@
 #include "controller.h"
 #include "kbhitLinux.h"
 #define CONTAINER_SIZE 20
+#define MAX_AMOUNT_ENTITY 6
+#define MIN_AMOUNT_ENTITY 3
 
 class Entity
 {
@@ -13,8 +15,8 @@ protected:
     char state;
     bool kill;
     short amount;
+    void getAmount();
     virtual void waitReady() = 0;
-    virtual void genAmount() = 0;
 public:
     Entity();
     ~Entity();
@@ -22,8 +24,8 @@ public:
 
 class Producer : public Entity
 {
+private:
     void waitReady();
-    void genAmount();
     void produce();
 public:
     Producer();
@@ -32,8 +34,8 @@ public:
 
 class Consumer : public Entity
 {
+private:
     void waitReady();
-    void genAmount();
     void consume();
 public:
     ~Consumer();

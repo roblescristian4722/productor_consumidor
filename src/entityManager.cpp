@@ -17,11 +17,26 @@ Entity::Entity()
 
 Entity::~Entity() {}
 
+void Entity::getAmount()
+{
+    amount = rand() % (MAX_AMOUNT_ENTITY - MIN_AMOUNT_ENTITY + 1)
+           + MIN_AMOUNT_ENTITY;
+}
+
 void Producer::waitReady()
 {
     while (!kill) {
         if (state == ENTERING) {
-            genAmount();
+            getAmount();
+        }        
+    }
+}
+
+void Consumer::waitReady()
+{
+    while (!kill) {
+        if (state == ENTERING) {
+            getAmount();
         }        
     }
 }
@@ -33,4 +48,4 @@ EntityManager::EntityManager()
         this->container[i] = '-';
 }
 
-EntityManager::~EntityManager() {}
+EntityManager::~EntityManager(){}

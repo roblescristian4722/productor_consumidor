@@ -1,4 +1,4 @@
-#include "../define/kbhitLinux.h"
+#include "../headers/kbhitLinux.h"
 
 void set_echo()
 {
@@ -12,8 +12,8 @@ void unset_echo()
 {
     struct termios term;
     tcgetattr(0, &term);
-    term.c_lflag &= ~ECHO;
     tcsetattr(STDIN_FILENO, TCSAFLUSH, &term);
+    term.c_lflag &= ~ECHO;
 }
 
 int kbhit()
