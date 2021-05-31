@@ -1,5 +1,6 @@
 #include <iostream>
 #include <thread>
+#include <future>
 #include "../headers/cursor.h"
 #include "../headers/controller.h"
 #include "../headers/entityManager.h"
@@ -13,21 +14,33 @@
                      X = getchar();\
                      unset_echo()
 #endif
+
 int main(int argc, char* argv[])
 {
     srand(time(0));
-    EntityManager em;
-    Producer p(&em);
-    Consumer c(&em);
-    char tmp = 0;
-    int aux = 0;
-    while (true) {
+    char key = 0;
+    char container[CONTAINER_SIZE];
+    short tme = 0;
+    short totalTme = 0;
+    Entity p(tme, container, totalTme, true);
+    Entity c(tme, container, totalTme, false);
+    Controller controller;
+
+    for (short i = 0; i < CONTAINER_SIZE; ++i)
+        container[i] = EMPTY_SYMBOL;
+
+    while (key != 27) {
         if (kbhit()) {
-            GETCH(tmp);
-            if (tmp == 27)
+            GETCH(key);
+            if (key == 27)
                 break;
         }
-        std::cout << aux++ << std::endl;
+        if (getTurn())
+            p.exec();
+            /* std::async(std::launch::async, &Producer::produce, p); */
+        else
+            c.exec();
+            /* std::async(std::launch::async, &Consumer::consume, c); */
     }
     return 0;
 }

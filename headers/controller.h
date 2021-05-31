@@ -11,7 +11,7 @@
 #define PROD_X_POS 3
 #define PROD_CONS_Y_POS 7
 #define CONS_X_POS 31
-#define ENT_Y_POS 9
+#define ENT_Y_POS 10
 #define TIME_Y_POS 2
 #define LOG_Y_POS 11
 
@@ -25,10 +25,10 @@ enum States
 
 class Controller
 {
-    friend class EntityManager;
-    Controller();
-    ~Controller();
-    
+    friend struct Entity;
+    friend struct Producer;
+    friend struct Consumer;
+        
     // Imprime los n espacios del contenedor con su índice debajo de cada uno.
     // Todos los espacios inician vacíos por defecto
     void printContainer();
@@ -38,16 +38,21 @@ class Controller
     // Toma un índice que puede ir del 0 al 19 como la posición del producto
     // que será consumido
     void consume(const short &index);
-    void consumerState(char state);
-    void producerState(char state);
+    void consumerState(short state);
+    void producerState(short state);
     // Imprime el estado
-    void printState(const short &x, const short &y, char state,
+    void printState(const short &x, const short &y, short state,
                     const std::string &entity);
     // Muestra la entidad a la que le toca ejecutarse, si prod = true entonces
     // se muestra "Productor", de lo contraio se muestra "Consumidor"
     void printEntity(bool prod = true);
     void printTime(const unsigned int &time);
-    void printLog(const std::string &log, const unsigned int &time = -1);
+    void prodLeft(const short &v);
+    void consLeft(const short &v);
+public:
+    Controller();
+    ~Controller();
+
 };
 
 #endif // CONTROLLER_H

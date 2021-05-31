@@ -8,56 +8,25 @@
 #define MAX_AMOUNT_ENTITY 6
 #define MIN_AMOUNT_ENTITY 3
 
-class Entity;
-class Producer;
-class Consumer;
-class EntityManager;
+bool getTurn();
+short getTime();
+bool isFull();
+bool isEmpty(char *container);
 
-class Entity
-{
-protected:
-    short lastPos;
-    char state;
-    bool kill;
-    short amount;
-    EntityManager* em;
-    void getAmount();
-    virtual void waitReady() = 0;
-public:
-    Entity();
-    ~Entity();
-};
 
-class Producer : public Entity
+struct Entity
 {
-    void waitReady();
+    short pos;
+    short state;
+    short *time;
+    char *container;
+    short *totalTme;
+    bool prod;
+    Controller *controller;
+    Entity(short &tme, char *container, short &totalTme, bool prod);
+    void exec();
     void produce();
-public:
-    Producer(EntityManager *em);
-    ~Producer();
-};
-
-class Consumer : public Entity
-{
-    void waitReady();
     void consume();
-public:
-    Consumer(EntityManager *em);
-    ~Consumer();
-};
-
-class EntityManager
-{
-    friend class Controller;
-    friend class Consumer;
-    friend class Producer;
-    Controller controller;
-    unsigned int time;
-    char container[CONTAINER_SIZE];
-    
-public:
-    EntityManager();
-    ~EntityManager();
 };
 
 #endif // ENTITY_MANAGER_H

@@ -135,6 +135,19 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/chrono /usr/include/c++/11.1.0/ratio \
  /usr/include/c++/11.1.0/limits /usr/include/c++/11.1.0/ctime \
  /usr/include/c++/11.1.0/bits/parse_numbers.h \
+ /usr/include/c++/11.1.0/future /usr/include/c++/11.1.0/mutex \
+ /usr/include/c++/11.1.0/bits/std_mutex.h \
+ /usr/include/c++/11.1.0/bits/unique_lock.h \
+ /usr/include/c++/11.1.0/condition_variable \
+ /usr/include/c++/11.1.0/bits/shared_ptr.h \
+ /usr/include/c++/11.1.0/bits/shared_ptr_base.h \
+ /usr/include/c++/11.1.0/bits/allocated_ptr.h \
+ /usr/include/c++/11.1.0/ext/aligned_buffer.h \
+ /usr/include/c++/11.1.0/ext/concurrence.h /usr/include/c++/11.1.0/atomic \
+ /usr/include/c++/11.1.0/bits/atomic_base.h \
+ /usr/include/c++/11.1.0/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11.1.0/bits/atomic_futex.h \
+ /usr/include/c++/11.1.0/bits/std_function.h \
  /home/kristo/Documents/productor_consumidor/src/../headers/cursor.h \
  /usr/include/c++/11.1.0/regex /usr/include/c++/11.1.0/algorithm \
  /usr/include/c++/11.1.0/bits/stl_algo.h \
@@ -155,14 +168,7 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/stl_uninitialized.h \
  /usr/include/c++/11.1.0/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11.1.0/bits/align.h /usr/include/c++/11.1.0/bit \
- /usr/include/c++/11.1.0/bits/shared_ptr.h \
- /usr/include/c++/11.1.0/bits/shared_ptr_base.h \
- /usr/include/c++/11.1.0/bits/allocated_ptr.h \
- /usr/include/c++/11.1.0/ext/aligned_buffer.h \
- /usr/include/c++/11.1.0/ext/concurrence.h \
  /usr/include/c++/11.1.0/bits/shared_ptr_atomic.h \
- /usr/include/c++/11.1.0/bits/atomic_base.h \
- /usr/include/c++/11.1.0/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11.1.0/backward/auto_ptr.h \
  /usr/include/c++/11.1.0/sstream /usr/include/c++/11.1.0/bits/sstream.tcc \
  /usr/include/c++/11.1.0/stack /usr/include/c++/11.1.0/deque \
@@ -177,7 +183,6 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/stl_multimap.h \
  /usr/include/c++/11.1.0/bits/erase_if.h /usr/include/c++/11.1.0/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /usr/include/c++/11.1.0/bits/std_function.h \
  /usr/include/c++/11.1.0/bits/regex_constants.h \
  /usr/include/c++/11.1.0/bits/regex_error.h \
  /usr/include/c++/11.1.0/bits/regex_automaton.h \

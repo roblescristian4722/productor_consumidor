@@ -3,12 +3,12 @@
 Controller::Controller()
 {
     Cursor::clrscr();
-    printContainer();
-    consumerState(true);
-    producerState(false);
-    printEntity();
+    producerState(SLEEPING);
+    consumerState(SLEEPING);
+    prodLeft(0);
+    consLeft(0);
     printTime(0);
-    printLog("sample log", -1);
+    printContainer();
 }
 
 Controller::~Controller(){}
@@ -45,56 +45,72 @@ void Controller::produce(const short &index, bool add)
         Cursor::gotoxy(pos, CONT_Y_POS + 1);
         std::cout << Cursor::colorText(AMARILLO, std::to_string(index + 1));
     }
+    std::cout.flush();
 }
 
 void Controller::consume(const short &index)
 { produce(index, false); }
 
-void Controller::printState(const short &x, const short &y, char state,
+void Controller::printState(const short &x, const short &y, short state,
                             const std::string &entity)
 {
     Cursor::gotoxy(x, y);
     std::cout << entity;
     switch (state) {
         case WORKING:
-            std::cout << Cursor::colorText(VERDE, "Trabajando");
+            std::cout << Cursor::colorText(VERDE, "Trabajando   ");
             break;
         case SLEEPING:
-            std::cout << Cursor::colorText(ROJO, "Durmiendo");
+            std::cout << Cursor::colorText(ROJO, "Durmiendo     ");
             break;
         case ENTERING:
-            std::cout << Cursor::colorText(MORADO, "Entrando");
+            std::cout << Cursor::colorText(MORADO, "Entrando    ");
             break;
         case LEAVING:
-            std::cout << Cursor::colorText(MORADO, "Saliendo");
+            std::cout << Cursor::colorText(MORADO, "Saliendo    ");
+            break;
+        default:
             break;
     }
+    std::cout.flush();
 }
 
-void Controller::consumerState(char state)
-{ printState(CONS_X_POS, PROD_CONS_Y_POS, state, "Consumidor: "); }
+void Controller::consumerState(short state)
+{
+    printState(CONS_X_POS, PROD_CONS_Y_POS, state, "Consumidor: ");
+    std::cout.flush();
+}
 
-void Controller::producerState(char state)
-{ printState(PROD_X_POS, PROD_CONS_Y_POS, state, "Productor: "); }
+void Controller::producerState(short state)
+{
+    printState(PROD_X_POS, PROD_CONS_Y_POS, state, "Productor: ");
+    std::cout.flush();
+}
 
 void Controller::printEntity(bool prod)
 {
     Cursor::gotoxy(CONT_X_POS, ENT_Y_POS);
-    std::cout << "Turno: " << (prod ? "Productor" : "Consumidor");
+    std::cout << "Turno: " << (prod ? "Productor " : "Consumidor");
+    std::cout.flush();
 }
-
 
 void Controller::printTime(const unsigned int &time)
 {
     Cursor::gotoxy(CONT_X_POS, TIME_Y_POS);
     std::cout << "Tiempo transcurrido: " << time;
+    std::cout.flush();
 }
 
-void Controller::printLog(const std::string &log, const unsigned int &time)
+void Controller::prodLeft(const short &v)
 {
-    Cursor::gotoxy(CONT_X_POS, LOG_Y_POS);
-    if (time != -1)
-        std::cout << "Log[" << time << "]: " << log;
-    else
-        std::cout << "";
+    Cursor::gotoxy(PROD_X_POS, PROD_CONS_Y_POS + 1);
+    std::cout << "Por producir: " << v << "      ";
+    std::cout.flush();
+}
+
+void Controller::consLeft(const short &v)
+{
+    Cursor::gotoxy(CONS_X_POS, PROD_CONS_Y_POS + 1);
+    std::cout << "Por consumir: " << v << "     ";
+    std::cout.flush();
 }

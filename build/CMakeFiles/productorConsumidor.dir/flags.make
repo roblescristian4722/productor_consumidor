@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/kristo/Documents/productor_consumidor/headers
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = -pthread -std=gnu++11
 
