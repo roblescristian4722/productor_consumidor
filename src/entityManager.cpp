@@ -28,18 +28,17 @@ Entity::Entity(short &tme, char *container, short &totalTime, bool prod)
     this->container = container;
     this->totalTme = &totalTime;
     this->pos = 0;
-    this->state = SLEEPING;
     this->prod = prod;
 }
 
 void Entity::consume()
 {
     *time = getTime();
-    state = WORKING;
     while (--(*time)) {
         if (container[pos] == EMPTY_SYMBOL)
             break;
         controller->consLeft(*time);
+        controller->consumerState(WORKING);
         container[pos] = EMPTY_SYMBOL;
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         (*totalTme)++;
@@ -54,12 +53,12 @@ void Entity::consume()
 void Entity::produce()
 {
     *time = getTime();
-    state = WORKING;
     while (--(*time)) {
         Cursor::gotoxy(1, 20);
         if (container[pos] == PRODUCT_SYMBOL)
             break;
         controller->prodLeft(*time);
+        controller->producerState(WORKING);
         container[pos] = PRODUCT_SYMBOL;
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         (*totalTme)++;
@@ -74,8 +73,10 @@ void Entity::produce()
 void Entity::exec()
 {
     prod ? controller->printEntity() : controller->printEntity(false);
-    state = ENTERING;
-    controller->consumerState(state);
+    if (prod)
+        controller->producerState(ENTERING);
+    else
+        controller->consumerState(ENTERING);
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     (*totalTme)++;
     controller->printTime(*totalTme);
@@ -85,11 +86,16 @@ void Entity::exec()
         else
             consume();
     }
-    state = LEAVING;
-    controller->consumerState(state);
+    if (prod)
+        controller->producerState(LEAVING);
+    else
+        controller->consumerState(LEAVING);
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     (*totalTme)++;
     controller->printTime(*totalTme);
-    state = SLEEPING;
-    controller->consumerState(state);
+    if (prod)
+        controller->producerState(SLEEPING);
+    else
+        controller->consumerState(SLEEPING);
+
 }

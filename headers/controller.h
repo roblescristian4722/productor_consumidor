@@ -26,8 +26,6 @@ enum States
 class Controller
 {
     friend struct Entity;
-    friend struct Producer;
-    friend struct Consumer;
         
     // Imprime los n espacios del contenedor con su índice debajo de cada uno.
     // Todos los espacios inician vacíos por defecto

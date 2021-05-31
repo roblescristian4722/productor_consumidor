@@ -17,7 +17,6 @@ bool isEmpty(char *container);
 struct Entity
 {
     short pos;
-    short state;
     short *time;
     char *container;
     short *totalTme;
