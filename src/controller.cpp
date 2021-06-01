@@ -3,6 +3,7 @@
 Controller::Controller()
 {
     Cursor::clrscr();
+    Cursor::hideCursor();
     producerState(SLEEPING);
     consumerState(SLEEPING);
     prodLeft(0);
@@ -11,7 +12,8 @@ Controller::Controller()
     printContainer();
 }
 
-Controller::~Controller(){}
+Controller::~Controller()
+{ Cursor::showCursor(); }
 
 void Controller::printContainer()
 {

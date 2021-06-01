@@ -34,7 +34,7 @@ Entity::Entity(short &tme, char *container, short &totalTime, bool prod)
 void Entity::consume()
 {
     *time = getTime();
-    while (--(*time)) {
+    while (*time) {
         if (container[pos] == EMPTY_SYMBOL)
             break;
         controller->consLeft(*time);
@@ -45,6 +45,7 @@ void Entity::consume()
         controller->printTime(*totalTme);
         controller->consume(pos);
         pos = (pos + 1) % CONTAINER_SIZE;
+        (*time)--;
     }
     *time = 0;
     controller->consLeft(*time);
@@ -53,8 +54,7 @@ void Entity::consume()
 void Entity::produce()
 {
     *time = getTime();
-    while (--(*time)) {
-        Cursor::gotoxy(1, 20);
+    while (*time) {
         if (container[pos] == PRODUCT_SYMBOL)
             break;
         controller->prodLeft(*time);
@@ -65,6 +65,7 @@ void Entity::produce()
         controller->printTime(*totalTme);
         controller->produce(pos);
         pos = (pos + 1) % CONTAINER_SIZE;
+        (*time)--;
     }
     *time = 0;
     controller->prodLeft(*time);
