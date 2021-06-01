@@ -22,19 +22,22 @@ bool isEmpty(char *container)
     return true;
 }
 
-Entity::Entity(short &tme, char *container, short &totalTime, bool prod)
+Entity::Entity(short &tme, char *container, short &totalTime, bool prod, char &key)
 {
     this->time = &tme;
     this->container = container;
     this->totalTme = &totalTime;
     this->pos = 0;
     this->prod = prod;
+    this->key = &key;
 }
 
 void Entity::consume()
 {
     *time = getTime();
     while (*time) {
+        if (*key == 27)
+            break;
         if (container[pos] == EMPTY_SYMBOL)
             break;
         controller->consLeft(*time);
@@ -55,6 +58,8 @@ void Entity::produce()
 {
     *time = getTime();
     while (*time) {
+        if (*key == 27)
+            break;
         if (container[pos] == PRODUCT_SYMBOL)
             break;
         controller->prodLeft(*time);
@@ -78,7 +83,9 @@ void Entity::exec()
         controller->producerState(ENTERING);
     else
         controller->consumerState(ENTERING);
+    if (*key == 27) return;
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    if (*key == 27) return;
     (*totalTme)++;
     controller->printTime(*totalTme);
     if (((prod && !isFull(container)) || (!prod && !isEmpty(container))) && !*time) {
@@ -92,6 +99,7 @@ void Entity::exec()
     else
         controller->consumerState(LEAVING);
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    if (*key == 27) return;
     (*totalTme)++;
     controller->printTime(*totalTme);
     if (prod)

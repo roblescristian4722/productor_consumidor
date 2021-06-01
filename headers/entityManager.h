@@ -20,9 +20,10 @@ struct Entity
     short *time;
     char *container;
     short *totalTme;
+    char * key;
     bool prod;
     Controller *controller;
-    Entity(short &tme, char *container, short &totalTme, bool prod);
+    Entity(short &tme, char *container, short &totalTme, bool prod, char &key);
     void exec();
     void produce();
     void consume();

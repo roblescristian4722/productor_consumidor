@@ -4,7 +4,7 @@ project(productorConsumidor)
 
 # Nombre del proyecto y versión (la versión corresponde al número de programa
 # a entregar para la materia)
-project(${CMAKE_PROJECT_NAME} VERSION 5.0)
+project(${CMAKE_PROJECT_NAME} VERSION 6.0)
 
 # Incluye el directorio de headers
 include_directories(headers)

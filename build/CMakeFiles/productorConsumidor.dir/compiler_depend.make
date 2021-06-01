@@ -1197,21 +1197,6 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11.1.0/limits \
   /usr/include/c++/11.1.0/ctime \
   /usr/include/c++/11.1.0/bits/parse_numbers.h \
-  /usr/include/c++/11.1.0/future \
-  /usr/include/c++/11.1.0/mutex \
-  /usr/include/c++/11.1.0/bits/std_mutex.h \
-  /usr/include/c++/11.1.0/bits/unique_lock.h \
-  /usr/include/c++/11.1.0/condition_variable \
-  /usr/include/c++/11.1.0/bits/shared_ptr.h \
-  /usr/include/c++/11.1.0/bits/shared_ptr_base.h \
-  /usr/include/c++/11.1.0/bits/allocated_ptr.h \
-  /usr/include/c++/11.1.0/ext/aligned_buffer.h \
-  /usr/include/c++/11.1.0/ext/concurrence.h \
-  /usr/include/c++/11.1.0/atomic \
-  /usr/include/c++/11.1.0/bits/atomic_base.h \
-  /usr/include/c++/11.1.0/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/11.1.0/bits/atomic_futex.h \
-  /usr/include/c++/11.1.0/bits/std_function.h \
   ../headers/cursor.h \
   /usr/include/c++/11.1.0/regex \
   /usr/include/c++/11.1.0/algorithm \
@@ -1236,7 +1221,14 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11.1.0/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11.1.0/bits/align.h \
   /usr/include/c++/11.1.0/bit \
+  /usr/include/c++/11.1.0/bits/shared_ptr.h \
+  /usr/include/c++/11.1.0/bits/shared_ptr_base.h \
+  /usr/include/c++/11.1.0/bits/allocated_ptr.h \
+  /usr/include/c++/11.1.0/ext/aligned_buffer.h \
+  /usr/include/c++/11.1.0/ext/concurrence.h \
   /usr/include/c++/11.1.0/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11.1.0/bits/atomic_base.h \
+  /usr/include/c++/11.1.0/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11.1.0/backward/auto_ptr.h \
   /usr/include/c++/11.1.0/sstream \
   /usr/include/c++/11.1.0/bits/sstream.tcc \
@@ -1257,6 +1249,7 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11.1.0/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
+  /usr/include/c++/11.1.0/bits/std_function.h \
   /usr/include/c++/11.1.0/bits/regex_constants.h \
   /usr/include/c++/11.1.0/bits/regex_error.h \
   /usr/include/c++/11.1.0/bits/regex_automaton.h \
@@ -1311,14 +1304,6 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/bits/struct_stat.h \
   ../headers/kbhitLinux.h
 
-
-/usr/include/c++/11.1.0/bits/atomic_futex.h:
-
-/usr/include/c++/11.1.0/atomic:
-
-/usr/include/c++/11.1.0/bits/unique_lock.h:
-
-/usr/include/c++/11.1.0/mutex:
 
 ../src/main.cpp:
 
@@ -1375,8 +1360,6 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11.1.0/bits/ostream_insert.h:
 
 /usr/include/c++/11.1.0/ext/new_allocator.h:
-
-/usr/include/c++/11.1.0/condition_variable:
 
 /usr/include/gnu/stubs-64.h:
 
@@ -1714,8 +1697,6 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/sys/select.h:
 
-/usr/include/c++/11.1.0/future:
-
 /usr/include/bits/select.h:
 
 /usr/include/bits/types/sigset_t.h:
@@ -1737,8 +1718,6 @@ CMakeFiles/productorConsumidor.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11.1.0/memory:
 
 /usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/c++/11.1.0/bits/std_mutex.h:
 
 /usr/include/bits/environments.h:
 
